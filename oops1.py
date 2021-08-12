@@ -14,9 +14,9 @@ self can be compared with this in java,c++,javascript
 class Flight:
     def __init__(self,number,aircraft):
         if not number[:2].isalpha():
-            raise ValueError(f"No Airline Code in '{number}'")
+            raise ValueError("No Airline Code ")
         if not number[:2].isupper():
-            raise ValueError(f"Invalid Airline Code in '{number}'")
+            raise ValueError("Invalid Airline Code ")
         if not (number[2:].isdigit() and int(number[2:])<=9999):
             raise ValueError(" InvalidRoute Number for aircraft  ")    
         self._number = number
