@@ -18,7 +18,7 @@ class Flight:
         if not number[:2].isupper():
             raise ValueError(f"Invalid Airline Code in '{number}'")
         if not (number[2:].isdigit() and int(number[2:])<=9999):
-            raise ValueError(" InvalidRoute Number  ")    
+            raise ValueError(" InvalidRoute Number for aircraft  ")    
         self._number = number
         self._aircraft = aircraft
         
